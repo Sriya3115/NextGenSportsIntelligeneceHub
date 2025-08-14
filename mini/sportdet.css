@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: inline;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 20px 0;
+}
+
+.sports-details h2 {
+    color: #555;
+}
+
+.sports-details p {
+    font-size: 1.1em;
+}
+
+.sports-details h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.sports-details ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.sports-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.sports-details table, .sports-details th, .sports-details td {
+    border: 1px solid #ddd;
+}
+
+.sports-details th, .sports-details td {
+    padding: 10px;
+    text-align: left;
+}
+
+.sports-details th {
+    background-color: #f2f2f2;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.b{
+    background-color: #0975e9;
+    padding-left: 10px;
+    padding-right: 10px;   
+    padding-top: 20px; 
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;     
+    font-size: 18px; 
+    border-radius: 5px;
+  }
+  .b:hover{
+    background-color: rgb(145, 145, 241);
+  }
+  /* From Uiverse.io by Shoh2008 */ 
+button {
+    padding: 10px 40px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    background: #1e1e1e;
+    cursor: pointer;
+    color: greenyellow;
+    box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+  }
+  
+  button:hover {
+    animation: a 0.5s 1 linear;
+  }
+  
+  @keyframes a {
+    0% {
+      transform: scale(0.7, 1.3);
+    }
+  
+    25% {
+      transform: scale(1.3, 0.7);
+    }
+  
+    50% {
+      transform: scale(0.7, 1.3);
+    }
+  
+    75% {
+      transform: scale(1.3, 0.7);
+    }
+  
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  

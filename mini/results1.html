@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <style>
+        body {
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background-color: black;
+        }
+
+        .custom-image {
+            display: block;
+            margin: 10% auto 2% auto;
+            max-width: 50%;
+            height: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        #animateText {
+            font-size: 48px;
+            color: white;
+            text-align: center;
+        }
+
+        #animateText span {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        #animateText span.fadeIn {
+            opacity: 1;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: larger;
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Replace the src URL below with your own hosted image link -->
+    <img class="custom-image" src="C:\Users\sriya\OneDrive\Desktop\sports_collage_by_twilighterjbsl1 (1).jpg" alt="Sports Collage" />
+
+    <h1 id="animateText">RESULTS WILL BE ANNOUNCED SOON.</h1>
+
+    <a href="welcome.html">GO TO HOME</a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const text = document.getElementById('animateText').textContent;
+            const animateText = document.getElementById('animateText');
+            animateText.innerHTML = '';
+
+            for (let i = 0; i < text.length; i++) {
+                const span = document.createElement('span');
+                span.textContent = text[i];
+                animateText.appendChild(span);
+            }
+
+            const spans = animateText.children;
+            let delay = 0;
+
+            for (let i = 0; i < spans.length; i++) {
+                setTimeout(function (span) {
+                    span.classList.add('fadeIn');
+                }, delay, spans[i]);
+                delay += 100;
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            max-width: 450px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        p{
+            font-size: 15px;
+            color: grey;
+        }
+        .text{
+            margin-bottom: 40px;
+        }
+    </style>
+    <script>
+        function registerSport() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const rollNo = document.getElementById('rollNo').value;
+            const sport = document.getElementById('sport').value;
+            const collegeName = document.getElementById('collegeName').value;
+
+            let registrations = JSON.parse(localStorage.getItem('registrations')) || [];
+            const alreadyRegistered = registrations.some(reg => reg.rollNo === rollNo && reg.sport === sport);
+            if (alreadyRegistered) {
+                alert('You are already registered for this sport.');
+                return;
+            }
+
+            registrations.push({ name, email, phone, rollNo, sport, collegeName });
+            localStorage.setItem('registrations', JSON.stringify(registrations));
+            window.location.href = 'registrationsc.html';
+        }
+    </script>
+</head>
+<body>
+    <h1>Sports Registration</h1>
+    <form onsubmit="event.preventDefault(); registerSport();">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+        
+        <label for="rollNo">Roll Number:</label>
+        <input type="text" id="rollNo" required>
+        
+        <label for="sport">Sport:</label>
+        <input type="text" id="sport" required>
+        <div class="text">
+            <p>Conducted Sports:</p>
+            <p>Cricket,foodball,Throwball,Vollyball,Khabaddi,Chess<br>Tabletennis,Basketball</p>
+        </div> 
+        <label for="collegeName">College Name:</label>
+        <input type="text" id="collegeName" required>
+        
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

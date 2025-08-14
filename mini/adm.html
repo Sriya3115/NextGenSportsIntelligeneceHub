@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sports managment system</title>
+    <link rel="stylesheet" href="adm.css">
+</head>
+<body>
+    <section>
+
+        <div class="login show" id="one">
+
+            <div class="textbox slide-left2">
+
+            <div class="head">
+
+                <h1>
+                    
+                    SIGN IN
+                
+                </h1>
+
+                
+                <h3 style = "cursor: pointer;">
+                    
+                    or use your E-mail ID
+                
+                </h3>
+
+            </div>
+
+                <form id="loginForm">
+
+                    <input type="text" placeholder="EMAIL" id="email" required>
+
+                    <input type="password" placeholder="PASSWORD" id="password" required>
+                    <button id="b">
+                        <a href="#" style = "cursor: pointer;">
+                            Forgot password?
+                        </a>
+                    </button>
+                    <button type="submit" class = 'sign_in_btn'>Submit</button>
+                    <p class="error" id="errorMessage"></p>
+                </form>
+            </div>
+        </div>
+</body>
+<script>
+    const adminCredentials = {
+      email: "vanamakarthik351@gmail.com",
+      password: "karthik123"
+    };
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      if (email === adminCredentials.email && password === adminCredentials.password) {
+        event.preventDefault();
+        window.location.href = "admindash.html"; 
+      } else {
+        document.getElementById("errorMessage").innerText = "User does not exist.";
+      }
+    });
+  </script>
+</html>

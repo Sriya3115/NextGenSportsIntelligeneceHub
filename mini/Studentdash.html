@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Sports Management System</title>
+    <link rel="stylesheet" href="Studentdash.css">
+</head>
+<body>
+    <header>
+        <h1>Sports Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="Studentdash.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="results2.html">Results</a></li>
+                <li><a href="co-ordinators1.html">Co-ordinators</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="welcome.html" id="logout-btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <h2>Welcome, Student Name!</h2>
+            <p>Keep track of your registrations, results, and contact details. Stay connected with your coaches and team.</p>
+        </section>
+
+        <section id="options">
+            <h3>Dashboard Options</h3>
+            <div class="option-grid">
+                <div class="option-card">
+                    <form id="myForm">
+                    <h4>Event Registration</h4>
+                    <p>Register for upcoming sports events and tournaments.</p>
+                    <button onclick="eventRegistration()">Register Now</button>
+                    </form>
+                </div>
+                <form id="myForm1">
+                <div class="option-card">
+                    <h4>View Results</h4>
+                    <p>Check your performance and view previous event results.</p>
+                    <button onclick="viewResults()" type="submit">View Results</button>
+                </form>
+                </div>
+                <form  id="myForm2">
+                <div class="option-card">
+                    <h4>Co-ordinators</h4>
+                    <p>Get to know your co-ordinators and contact them for guidance.</p>
+                    <button onclick="viewCoaches()">Meet the Co-ordinators</button>
+                </div>
+            </form>
+            <form id="myForm3">
+                <div class="option-card">
+                    <h4>Contact Us</h4>
+                    <p>Have a question? Get in touch with the sports management team.</p>
+                    <button onclick="contactUs()">Contact</button>
+                </div>
+            </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SRITW Sports Hub. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault();  
+    window.location.href = "registration.html";  
+});
+document.getElementById("myForm1").addEventListener("submit", function(event) {
+    event.preventDefault();  
+    window.location.href = "results2.html";  
+});
+document.getElementById("myForm2").addEventListener("submit", function(event) {
+    event.preventDefault();  
+    window.location.href = "co-ordinators1.html";  
+});
+document.getElementById("myForm3").addEventListener("submit", function(event) {
+    event.preventDefault();  
+    window.location.href = "contactus.html";  
+});
+</script>
+</html>
+
+
+
+
+
+
+

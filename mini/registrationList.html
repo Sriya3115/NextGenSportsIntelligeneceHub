@@ -1,0 +1,117 @@
+<!-- registrationList.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Sports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #5cb85c;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #d9534f;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c9302c;
+        }
+        a{
+            color: black;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 43%;
+            padding-left: 85px;
+            padding-right: 75px;
+            background-color: #d9534f;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-radius: 4px;
+            color: white;
+            font-size: 14px;
+        }
+        a:hover{
+            background-color: #c9302c;
+        }
+    </style>
+    <script>
+        function displayRegistrations() {
+            const registrations = JSON.parse(localStorage.getItem('registrations')) || [];
+            const registrationsContainer = document.getElementById('registrationsContainer');
+
+            // Create table structure
+            const table = document.createElement('table');
+            const headerRow = document.createElement('tr');
+            const headers = ['Name', 'Email', 'Phone', 'Roll No', 'Sport', 'College'];
+
+            headers.forEach(headerText => {
+                const th = document.createElement('th');
+                th.textContent = headerText;
+                headerRow.appendChild(th);
+            });
+            table.appendChild(headerRow);
+
+            // Display each registration in a table row
+            registrations.forEach(reg => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${reg.name}</td>
+                    <td>${reg.email}</td>
+                    <td>${reg.phone}</td>
+                    <td>${reg.rollNo}</td>
+                    <td>${reg.sport}</td>
+                    <td>${reg.collegeName}</td>
+                `;
+                table.appendChild(row);
+            });
+
+            registrationsContainer.appendChild(table);
+        }
+    </script>
+</head>
+<body onload="displayRegistrations()">
+    <h1>Registered Sports</h1>
+    <div id="registrationsContainer"></div>
+    <button onclick="localStorage.clear(); window.location.href='admindash.html';">REMOVE ALL</button>
+    <a href="admindash.html">BACK</a>
+</body>
+</html>
+
+
+
+

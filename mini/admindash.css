@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #2f4f7f;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #ccc;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.dashboard {
+    background-color: #fff;
+    padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.welcome {
+    margin-bottom: 20px;
+}
+
+.quick-links {
+    margin-bottom: 20px;
+}
+
+.quick-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+}
+
+.stats {
+    margin-bottom: 20px;
+}
+
+.stats ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.stats li {
+    margin-bottom: 10px;
+}
+
+.stats span {
+    font-weight: bold;
+    color: #2f4f7f;
+}
+
+footer {
+    background-color: #2f4f7f;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+ul li a{
+    font-size: larger;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+h1{
+    color: white;
+}
+
+.animated-h1 {
+    font-size: 2rem;
+    color: #fff;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ff6347;
+    }
+    25% {
+        color: #1e90ff;
+    }
+    50% {
+        color: #32cd32;
+    }
+    75% {
+        color: #ff69b4;
+    }
+    100% {
+        color: #ff6347;
+    }
+}

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> STUDENT DETAILS</title>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+}
+
+.update {
+  color: green;
+  cursor: pointer;
+}
+
+.delete {
+  color: red;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+h1{
+  margin-left: 30%;
+  text-transform: uppercase;
+  color: linear-gradient(to right,#662D8C, #ED1E79,yellow,blue);
+}
+.b{
+  background-color: black;
+  padding-left: 10px;
+  padding-right: 10px;   
+  padding-top: 20px; 
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;     
+  font-size: 18px; 
+  border-radius: 5px;
+}
+.b:hover{
+  background-color: rgb(117, 101, 101);
+}
+
+
+
+</style>
+</head>
+<body>
+  <a href="admindash.html" class="b">GO TO HOME</a>
+  <br>
+  <h1> Registered Student Details</h1>
+  <br>
+<br>
+<table id="studentTable">
+  <tr class="header">
+    <th>Sl.NO</th>
+    <th>NAME</th>
+    <th>REGISTRATION NO</th>
+    <th>GENDER</th>
+    <th>SEM</th>
+    <th>BRANCH</th>
+    <th>Event-1</th>
+    <th>Event-2</th>
+    <th>Event-3</th>
+    <th>Event-4</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>KARTHIK</td>
+    <td>15466A655</td>
+    <td>MALE</td>
+    <td>SEM-V</td>
+    <td>IT</td>
+    <td>TABLETENNIS</td>
+    <td>VOLLYBALL</td>
+    <td>CHESS</td>
+    <td>KABADDI</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>UDAY</td>
+    <td>51641565A</td>
+    <td>MALE</td>
+    <td>SEM-V</td>
+    <td>IT</td>
+    <td>VOLLYBALL</td>
+    <td>KABADDI</td>
+    <td>KHO-KHO</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>MANISHA</td>
+    <td>654984A84</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>IT</td>
+    <td>CHESS</td>
+    <td>THROW BALL</td>
+    <td>TABLETENNIS</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>AKHILA</td>
+    <td>54S5DF545</td>
+    <td>FEMALE</td>
+    <td>SEM-VI</td>
+    <td>CSE</td>
+    <td>KABADDI</td>
+    <td>THROW BALL</td>
+    <td>CHESS</td>
+    <td>TABLE TENNIS</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>SAI TEJA</td>
+    <td>6568SF65</td>
+    <td>MALE</td>
+    <td>SEM-VI</td>
+    <td>MECH</td>
+    <td>CRICKET</td>
+    <td>KABADDI</td>
+    <td>KHO-KHO</td>
+    <td>TABLE TENNIS</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>GNANESHWAR</td>
+    <td>5151S648</td>
+    <td>MALE</td>
+    <td>SEM-IV</td>
+    <td>PHARMA</td>
+    <td>CRICKET</td>
+    <td>VOLLYBALL</td>
+    <td>TABLETENNIS</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>ANSAR</td>
+    <td>65184984S6</td>
+    <td>MALE</td>
+    <td>SEM-II</td>
+    <td>H&S</td>
+    <td>CRICKET</td>
+    <td>VOLLYBALL</td>
+    <td>TABLETENNIS</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>AWEZ</td>
+    <td>35163AB654</td>
+    <td>MALE</td>
+    <td>SEM-III</td>
+    <td>AIML</td>
+    <td>CRICKET</td>
+    <td>KHO-KHO</td>
+    <td>KABADDI</td>
+    <td>VOLLYBALL</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>BHANU</td>
+    <td>187546SD81</td>
+    <td>MALE</td>
+    <td>SEM-IV</td>
+    <td>ECE</td>
+    <td>KHO-KHO</td>
+    <td>CHESS</td>
+    <td>TABLE TENNIS</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>SUMADHER</td>
+    <td>1489168DCR4</td>
+    <td>MALE</td>
+    <td>SEM-VII</td>
+    <td>EEE</td>
+    <td>VOLLYBALL</td>
+    <td>CRICKET</td>
+    <td>TABLETENNIS</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>HARSHA</td>
+    <td>6589465S56</td>
+    <td>MALE</td>
+    <td>SEM-IV</td>
+    <td>MECH</td>
+    <td>KHO-KHO</td>
+    <td>CRICKET</td>
+    <td>BASKETBALL</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>SINDHU</td>
+    <td>98494F49DF</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>CSE</td>
+    <td>BASKETBALL</td>
+    <td>THROWBALL</td>
+    <td>CHESS</td>
+    <td>KABADDI</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>CHERITHA</td>
+    <td>484681D4S55</td>
+    <td>FEMALE</td>
+    <td>SEM-IV</td>
+    <td>IT</td>
+    <td>THROWBALL</td>
+    <td>BASKETBALL</td>
+    <td>KHO-KHO</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>KAVYA</td>
+    <td>681WD8981</td>
+    <td>FEMALE</td>
+    <td>SEM-IV</td>
+    <td>AGRICULTURE</td>
+    <td>THROWBALL</td>
+    <td>CHESS</td>
+    <td>BASKETBALL</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>SHURTHI</td>
+    <td>419849SD68</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>MECH</td>
+    <td>THROWBALL</td>
+    <td>KABADDI</td>
+    <td>CHESS</td>
+    <td>TABLETENNIS</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>PREETHI</td>
+    <td>6565846SD</td>
+    <td>FEMALE</td>
+    <td>SEM-VI</td>
+    <td>PHARMA</td>
+    <td>THROWBALL</td>
+    <td>VOLLYBALL</td>
+    <td>TABLETENNIS</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>TANVIHA</td>
+    <td>681ER98F91</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>CSE</td>
+    <td>THROWBALL</td>
+    <td>BASKET BASKETBALL</td>
+    <td>TABLETENNIS</td>
+    <td>KHO-KHO</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>SAI CHARAN</td>
+    <td>684RG6684</td>
+    <td>MALE</td>
+    <td>SEM-V</td>
+    <td>DS</td>
+    <td>CRICKET</td>
+    <td>VOLLYBALL</td>
+    <td>BASKETBALL</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>AADYA</td>
+    <td>419849SD68</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>MECH</td>
+    <td>THROWBALL</td>
+    <td>KABADDI</td>
+    <td>CHESS</td>
+    <td>TABLETENNIS</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>SRVYA</td>
+    <td>6565846SD</td>
+    <td>FEMALE</td>
+    <td>SEM-VI</td>
+    <td>PHARMA</td>
+    <td>THROWBALL</td>
+    <td>VOLLYBALL</td>
+    <td>TABLETENNIS</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>BUBBY</td>
+    <td>187546SD81</td>
+    <td>MALE</td>
+    <td>SEM-IV</td>
+    <td>ECE</td>
+    <td>KHO-KHO</td>
+    <td>CHESS</td>
+    <td>TABLE TENNIS</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>VINAY</td>
+    <td>1489168DCR4</td>
+    <td>MALE</td>
+    <td>SEM-VII</td>
+    <td>EEE</td>
+    <td>VOLLYBALL</td>
+    <td>CRICKET</td>
+    <td>TABLETENNIS</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>ROHAN</td>
+    <td>6589465S56</td>
+    <td>MALE</td>
+    <td>SEM-IV</td>
+    <td>MECH</td>
+    <td>KHO-KHO</td>
+    <td>CRICKET</td>
+    <td>BASKETBALL</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>SWAPNA</td>
+    <td>98494F49DF</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>CSE</td>
+    <td>BASKETBALL</td>
+    <td>THROWBALL</td>
+    <td>CHESS</td>
+    <td>KABADDI</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>SAI SHARAN</td>
+    <td>1489168DCR4</td>
+    <td>MALE</td>
+    <td>SEM-VII</td>
+    <td>EEE</td>
+    <td>VOLLYBALL</td>
+    <td>CRICKET</td>
+    <td>TABLETENNIS</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>AKASH</td>
+    <td>6589465S56</td>
+    <td>MALE</td>
+    <td>SEM-IV</td>
+    <td>MECH</td>
+    <td>KHO-KHO</td>
+    <td>CRICKET</td>
+    <td>BASKETBALL</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>VIJAYA</td>
+    <td>98494F49DF</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>CSE</td>
+    <td>BASKETBALL</td>
+    <td>THROWBALL</td>
+    <td>CHESS</td>
+    <td>KABADDI</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>RAKSHITHA</td>
+    <td>484681D4S55</td>
+    <td>FEMALE</td>
+    <td>SEM-IV</td>
+    <td>IT</td>
+    <td>THROWBALL</td>
+    <td>BASKETBALL</td>
+    <td>KHO-KHO</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>KOMALLI</td>
+    <td>681WD8981</td>
+    <td>FEMALE</td>
+    <td>SEM-IV</td>
+    <td>AGRICULTURE</td>
+    <td>THROWBALL</td>
+    <td>CHESS</td>
+    <td>BASKETBALL</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>SRIVANI</td>
+    <td>419849SD68</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>MECH</td>
+    <td>THROWBALL</td>
+    <td>KABADDI</td>
+    <td>CHESS</td>
+    <td>TABLETENNIS</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>POOJA</td>
+    <td>6565846SD</td>
+    <td>FEMALE</td>
+    <td>SEM-VI</td>
+    <td>PHARMA</td>
+    <td>THROWBALL</td>
+    <td>VOLLYBALL</td>
+    <td>TABLETENNIS</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>KAVERI</td>
+    <td>681ER98F91</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>CSE</td>
+    <td>THROWBALL</td>
+    <td>BASKET BASKETBALL</td>
+    <td>TABLETENNIS</td>
+    <td>KHO-KHO</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>NAVEEN</td>
+    <td>684RG6684</td>
+    <td>MALE</td>
+    <td>SEM-V</td>
+    <td>DS</td>
+    <td>CRICKET</td>
+    <td>VOLLYBALL</td>
+    <td>BASKETBALL</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>AARADYA</td>
+    <td>419849SD68</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>MECH</td>
+    <td>THROWBALL</td>
+    <td>KABADDI</td>
+    <td>CHESS</td>
+    <td>TABLETENNIS</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>SIRI</td>
+    <td>6565846SD</td>
+    <td>FEMALE</td>
+    <td>SEM-VI</td>
+    <td>PHARMA</td>
+    <td>THROWBALL</td>
+    <td>VOLLYBALL</td>
+    <td>TABLETENNIS</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>VENKATESH</td>
+    <td>187546SD81</td>
+    <td>MALE</td>
+    <td>SEM-IV</td>
+    <td>ECE</td>
+    <td>KHO-KHO</td>
+    <td>CHESS</td>
+    <td>TABLE TENNIS</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>GANESH</td>
+    <td>1489168DCR4</td>
+    <td>MALE</td>
+    <td>SEM-VII</td>
+    <td>EEE</td>
+    <td>VOLLYBALL</td>
+    <td>CRICKET</td>
+    <td>TABLETENNIS</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>RAVI</td>
+    <td>6589465S56</td>
+    <td>MALE</td>
+    <td>SEM-IV</td>
+    <td>MECH</td>
+    <td>KHO-KHO</td>
+    <td>CRICKET</td>
+    <td>BASKETBALL</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>SWATHI</td>
+    <td>98494F49DF</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>CSE</td>
+    <td>BASKETBALL</td>
+    <td>THROWBALL</td>
+    <td>CHESS</td>
+    <td>KABADDI</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>KIRAN</td>
+    <td>15466A655</td>
+    <td>MALE</td>
+    <td>SEM-V</td>
+    <td>IT</td>
+    <td>TABLETENNIS</td>
+    <td>VOLLYBALL</td>
+    <td>CHESS</td>
+    <td>KABADDI</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>UMESHWAR</td>
+    <td>51641565A</td>
+    <td>MALE</td>
+    <td>SEM-V</td>
+    <td>IT</td>
+    <td>VOLLYBALL</td>
+    <td>KABADDI</td>
+    <td>KHO-KHO</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>MEGHANA</td>
+    <td>654984A84</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>IT</td>
+    <td>CHESS</td>
+    <td>THROW BALL</td>
+    <td>TABLETENNIS</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>ALEKYA</td>
+    <td>54S5DF545</td>
+    <td>FEMALE</td>
+    <td>SEM-VI</td>
+    <td>CSE</td>
+    <td>KABADDI</td>
+    <td>THROW BALL</td>
+    <td>CHESS</td>
+    <td>TABLE TENNIS</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>SURYA</td>
+    <td>6568SF65</td>
+    <td>MALE</td>
+    <td>SEM-VI</td>
+    <td>MECH</td>
+    <td>CRICKET</td>
+    <td>KABADDI</td>
+    <td>KHO-KHO</td>
+    <td>TABLE TENNIS</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>GAGAN</td>
+    <td>5151S648</td>
+    <td>MALE</td>
+    <td>SEM-IV</td>
+    <td>PHARMA</td>
+    <td>CRICKET</td>
+    <td>VOLLYBALL</td>
+    <td>TABLETENNIS</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>AVINASH</td>
+    <td>65184984S6</td>
+    <td>MALE</td>
+    <td>SEM-II</td>
+    <td>H&S</td>
+    <td>CRICKET</td>
+    <td>VOLLYBALL</td>
+    <td>TABLETENNIS</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>AKHIL</td>
+    <td>35163AB654</td>
+    <td>MALE</td>
+    <td>SEM-III</td>
+    <td>AIML</td>
+    <td>CRICKET</td>
+    <td>KHO-KHO</td>
+    <td>KABADDI</td>
+    <td>VOLLYBALL</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>BARGHAV</td>
+    <td>187546SD81</td>
+    <td>MALE</td>
+    <td>SEM-IV</td>
+    <td>ECE</td>
+    <td>KHO-KHO</td>
+    <td>CHESS</td>
+    <td>TABLE TENNIS</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>SWAMY</td>
+    <td>1489168DCR4</td>
+    <td>MALE</td>
+    <td>SEM-VII</td>
+    <td>EEE</td>
+    <td>VOLLYBALL</td>
+    <td>CRICKET</td>
+    <td>TABLETENNIS</td>
+    <td>CHESS</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>HARI</td>
+    <td>6589465S56</td>
+    <td>MALE</td>
+    <td>SEM-IV</td>
+    <td>MECH</td>
+    <td>KHO-KHO</td>
+    <td>CRICKET</td>
+    <td>BASKETBALL</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td>SATYA</td>
+    <td>98494F49DF</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>CSE</td>
+    <td>BASKETBALL</td>
+    <td>THROWBALL</td>
+    <td>CHESS</td>
+    <td>KABADDI</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>CHANDINI</td>
+    <td>484681D4S55</td>
+    <td>FEMALE</td>
+    <td>SEM-IV</td>
+    <td>IT</td>
+    <td>THROWBALL</td>
+    <td>BASKETBALL</td>
+    <td>KHO-KHO</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>KAMAKSHI</td>
+    <td>681WD8981</td>
+    <td>FEMALE</td>
+    <td>SEM-IV</td>
+    <td>AGRICULTURE</td>
+    <td>THROWBALL</td>
+    <td>CHESS</td>
+    <td>BASKETBALL</td>
+    <td>---</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td>DEEPIKA</td>
+    <td>419849SD68</td>
+    <td>FEMALE</td>
+    <td>SEM-V</td>
+    <td>MECH</td>
+    <td>THROWBALL</td>
+    <td>KABADDI</td>
+    <td>CHESS</td>
+    <td>TABLETENNIS</td>
+  </tr>
+  
+
+
+
+</table>
+</body>
+</html>
